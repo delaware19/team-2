@@ -33,18 +33,6 @@ cd rise-up
 npm i
 npm start
 ```
-In a seperate Terminal/Command Prompt for windows
-```
-cd 
-ngrok.exe http 3000
-```
-Open the url that ngrok gives you
-
-You must also takes this url and the post request adress which is /messageComesIn and add it to your phone number in twilio it is in the Twilio Website under your Twilio Number
-
-It should look like this
-
-![Screenshot](ScreenShot.JPG)
 
 You should change the url under the Messaging tab in the webhook field, there is already an example there for you.
 

@@ -1,5 +1,15 @@
 const express = require('express')
 var bodyParser = require('body-parser')
+require('dotenv').config()
+
+var sql = require("mssql");
+
+var config = {
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    server: 'localhost', 
+    database: process.env.DATABASE
+};
 
 const app = express();
 
@@ -10,7 +20,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 
 
 app.get("/", (req,res) =>{
-    res.send("hellworld");
+    
 });
 
 const server = app.listen(3000, () => {

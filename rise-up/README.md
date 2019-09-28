@@ -28,13 +28,14 @@ This is for a local enviorment to run the code
 
 ```
 git clone directory
-cd Therapy
+cd team-2
+cd rise-up
 npm i
-node app.js
+npm start
 ```
 In a seperate Terminal/Command Prompt for windows
 ```
-cd Therapy
+cd 
 ngrok.exe http 3000
 ```
 Open the url that ngrok gives you

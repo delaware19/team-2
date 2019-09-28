@@ -147,7 +147,7 @@ export default function Dashboard() {
             {/* Recent Phases */}
             <Grid item xs={12} md={4} lg={3}>
               <Paper className={fixedHeightPaper}>
-                <Phases name="Phase 1: Research" imagesrc="phase1.png"/>
+                <Phases name="Phase 1: Research" imagesrc="phase1.png" />
                 
               </Paper>
             </Grid>

@@ -6,7 +6,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import Header from './Header'
 import { Jumbotron, Container, Form,  Row, Col, Button } from 'react-bootstrap';
 import "./Header.css";
+import Background from '../img/sunset.png';
 import {withRouter } from 'react-router-dom'
+import Grid from '@material-ui/core/Grid';
+import "./Homepage.css";
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,6 +18,11 @@ const useStyles = makeStyles({
         flex: 2,
     },
 });
+
+var sectionStyle = {
+    backgroundSize: "auto",
+    backgroundImage: "url(" +  Background  + ")"
+  };
 
 class Homepage extends React.Component {
     constructor() {
@@ -33,29 +41,34 @@ class Homepage extends React.Component {
         return (
 
             <React.Fragment className="nottest">
-
+                
                 <Header />
 
-                <Jumbotron  fluid>
-                    <Container>
-                        <h1 align="Center">Rise Up
+                
+                    
+                    
+                    <section style={ sectionStyle }>
+                        <br />
+                        <br />
+                        <br />
+                    <h1 align="Center">Rise Up
                         </h1>
-                        <p>
 
-
-                        </p>
-                    </Container>
-                </Jumbotron>
-                <Container>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br /> <br /> <br />
                     <Form onSubmit={this.submitForm.bind(this)}>
-                        <Row>
+                        <Form.Row >
                             <Col align ="center" xs={6}>
-                              <strong className=".bold-text">I am passionate about changing</strong>
+                              <h4 className=".bold-text">I am passionate about reforming</h4>
                             </Col>
                             <Col>
-                                <Form.Group controlId="violence">
-                                    <Form.Label>Choose</Form.Label>
+                                <Form.Group controlId="violence" align = "center">
                                     <Form.Control as="select">
+                                        <option>select an issue</option>
                                         <option>Sexual Violence</option>
                                         <option>Gun Violence</option>
                                         <option>Domestic Violence</option>
@@ -63,15 +76,15 @@ class Homepage extends React.Component {
                                     </Form.Control>
                                 </Form.Group>
                             </Col>
-                        </Row>
+                        </Form.Row>
 
-                        <Row>
+                        <Row >
                             <Col align = "center">
-                            <strong className=".bold-text">and I am from</strong></Col>
+                            <h4 className=".bold-text">and I am from</h4></Col>
                             <Col >
                             <Form.Group controlId="states">
-                                <Form.Label>States</Form.Label>
                                 <Form.Control  as="select">
+                                    <option>select a state</option>
                                     <option>Florida</option>
                                     <option>Delaware</option>
                                     <option>Texas</option>
@@ -85,7 +98,14 @@ class Homepage extends React.Component {
                         <Button type="submit"> Let's get started!</Button>
                         </div>
                     </Form>
-                </Container>
+                   <br /> <br /> <br /> <br /><br /><br /> <br />
+                   <br /> <br />
+            </section>
+                        
+                
+                
+                
+               
 
 
             </React.Fragment>

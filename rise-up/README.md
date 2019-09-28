@@ -38,7 +38,7 @@ npm start
 
 * [NodeJs](https://nodejs.org/en/) - Backend Server used
 * [ExpressJS](https://expressjs.com/) - Routing Service
-* [React JS](https://socket.io/) - Used to Easily route data from client page to the server
+* [React JS](https://reactjs.org/) - Used to Easily route data from client page to the server
 
 
 ## Authors

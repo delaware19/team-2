@@ -14,7 +14,6 @@ What things you need to install the software and how to install them
 ```
 latest version of node js
 npm
-twilio authentication codes
 browser
 
 ```

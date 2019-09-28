@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/delaware19/team-2#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mssql": "^5.1.0"
   }
 }

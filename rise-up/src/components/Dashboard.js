@@ -30,7 +30,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+        Rise Up
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -158,22 +158,26 @@ export default function Dashboard() {
             {/* Recent Phases */}
             <Grid item xs={12} md={4} lg={3}>
               <Paper className={fixedHeightPaper}>
-                <Phases name="Phase 1" />
+                <Phases name="Phase 1: Research" imagesrc="phase1.png"/>
+                
               </Paper>
             </Grid>
             <Grid item xs={12} md={4} lg={3}>
               <Paper className={fixedHeightPaper}>
-                <Phases name="Phase 2"/>
+                <Phases name="Phase 2: Community" imagesrc="phase2.png"/>
+                
               </Paper>
             </Grid>
             <Grid item xs={12} md={4} lg={3}>
               <Paper className={fixedHeightPaper}>
-                <Phases name="Phase 3"/>
+                <Phases name="Phase 3: Storytelling" imagesrc="phase3.png"/>
+                
               </Paper>
             </Grid>
             <Grid item xs={12} md={4} lg={3}>
               <Paper className={fixedHeightPaper}>
-                <Phases name="Phase 4"/>
+                <Phases name="Phase 4: Lawmaking" imagesrc="phase4.png"/>
+                
               </Paper>
             </Grid>
             {/* Recent Orders */}

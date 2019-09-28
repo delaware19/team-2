@@ -5,31 +5,55 @@ import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Title from './Title';
-
+import ReactModal from 'react-modal'; 
+import Button from '@material-ui/core/Button'; 
 const useStyles = makeStyles({
   depositContext: {
     flex: 1,
   },
 });
 
-function Phases(props){ 
+class Phases extends React.Component{ 
+  constructor () {
+    super();
+    this.state = {
+      showModal: false
+    };
+    
+    this.handleOpenModal = this.handleOpenModal.bind(this);
+    this.handleCloseModal = this.handleCloseModal.bind(this);
+  }
   
-    const classes = useStyles(); 
-    return (
+  handleOpenModal () {
+    this.setState({ showModal: true });
+  }
+  
+  handleCloseModal () {
+    this.setState({ showModal: false });
+  }
+    // const classes = useStyles(); 
+    render() { 
+      return (
     <React.Fragment>
       
       <Typography component="p" variant="h4">
-        {props.name}
+        {this.props.name}
       </Typography>
       
       <div>
-        <Link color="primary" href="javascript:;">
+        <Button onClick={this.handleOpenModal} color="primary">
           View tasks
-        </Link>
+        </Button>
+        <ReactModal className="popup"
+           isOpen={this.state.showModal}
+           contentLabel="Minimal Modal Example">
+           <button onClick={this.handleCloseModal}>Close Modal</button>
+        </ReactModal>
       </div>
     </React.Fragment>
     );
   }
+} 
 
 export default Phases; 
 

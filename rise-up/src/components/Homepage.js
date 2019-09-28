@@ -32,11 +32,11 @@ class Homepage extends React.Component {
     render() {
         return (
 
-            <React.Fragment>
+            <React.Fragment className="nottest">
 
                 <Header />
 
-                <Jumbotron className="test" fluid>
+                <Jumbotron  fluid>
                     <Container>
                         <h1 align="Center">Rise Up
                         </h1>

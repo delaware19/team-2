@@ -20,7 +20,9 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 
 
 app.get("/", (req,res) =>{
-    
+    sql.connect(config, (err)=>{
+       
+    });
 });
 
 const server = app.listen(3000, () => {

@@ -8,6 +8,7 @@ import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
+import Checkbox from '@material-ui/core/Checkbox';
 import Title from './Title';
 
 // Generate Order Data
@@ -16,9 +17,9 @@ function createData(id, date, name, shipTo, paymentMethod, amount) {
 }
 
 const rows = [
-  createData(0, "Call Senator", '16 Mar, 2019',),
-  createData(1, "Attend congressional meeting", '16 Mar, 2019',),
-  createData(2, "Create layout for petition", '16 Mar, 2019',),
+  createData(0, "Call Senator", '16 Mar, 2019',<Checkbox/>),
+  createData(1, "Attend congressional meeting", '16 Mar, 2019',<Checkbox/>),
+  createData(2, "Create layout for petition", '16 Mar, 2019',<Checkbox/>),
 
 ];
 
@@ -39,6 +40,7 @@ export default function Orders() {
             <TableCell>Item</TableCell>
             <TableCell>Due by</TableCell>
             <TableCell>Completed</TableCell>
+            
           </TableRow>
         </TableHead>
         <TableBody>

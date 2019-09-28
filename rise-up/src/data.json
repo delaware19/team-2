@@ -1,6 +1,5 @@
-{
-    "0" : {
-        "Branch": "House",
+ [
+ {  "Branch": "House",
         "District":"11",
         "firstName":"Jeffery",
         "lastName":"Spiegelman",
@@ -12,7 +11,7 @@
         "firstElected":"2012",
         "countiesRepresented":"Clayton"
     },
-    "1":  {
+      {
         "Branch":"House",
         "District":"12",
         "firstName":"Krista",
@@ -25,7 +24,7 @@
         "firstElected":"1994",
         "countiesRepresented":"Fairthorne"
     },
-    "2":  {
+     {
         "Branch":"House",
         "District":"13",
         "firstName":"John",
@@ -38,7 +37,6 @@
         "firstElected":"2006",
         "countiesRepresented":"Elsmere"
     },
-    "3":
         {
         "Branch":"House",
         "District":"14",
@@ -52,4 +50,4 @@
         "firstElected":"2002",
         "countiesRepresented": "Rehoboth"
     }
-}
+ ]

@@ -7,6 +7,8 @@ import Typography from '@material-ui/core/Typography';
 import Modal from 'react-modal';
 import { Card, Button, Container, Row, Col } from 'react-bootstrap';
 
+import ReacttableModal from './ReacttableModal';
+
 
 
 
@@ -14,7 +16,8 @@ class Phases extends React.Component {
   constructor() {
     super();
     this.state = {
-      showModal: false
+      showModal: false,
+      showReactTable: false
     };
 
     this.handleOpenModal = this.handleOpenModal.bind(this);
@@ -68,7 +71,7 @@ class Phases extends React.Component {
                 </Col>
                 <Col>
                   <Card style={{ width: '18rem', height: '8rem' }}>
-                    <Card.Body onClick={e => console.log("Test")}>
+                    <Card.Body onClick={e => this.setState({showReactTable: true})}>
                       <Card.Title>Task 2</Card.Title>
                       <Card.Text>
                         Find a sponser ideally one Democrat and one Republican.
@@ -92,6 +95,13 @@ class Phases extends React.Component {
 
           </Modal>
         </div>
+
+        {this.state.showReactTable ? (
+         <ReacttableModal showModal={this.state.showReactTable} closeModal={e => this.setState({showReactTable: false})}/>
+          
+        ) : (
+          null
+        )}
       </React.Fragment>
     );
   }

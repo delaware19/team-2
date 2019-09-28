@@ -171,8 +171,16 @@ export default function Dashboard() {
             </Grid>
             {/* Recent Orders */}
             
+          <Grid item xs={6}>
+            <Calendar> </Calendar>
           </Grid>
-         
+          <Grid item xs={6}>
+              <Paper className={classes.paper}>
+                <Orders />
+              </Paper>
+            </Grid>
+          </Grid>
+          
         </Container>
         <Copyright />
       </main>

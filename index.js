@@ -9,7 +9,9 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 })); 
 
 
-
+app.get("/", (req,res) =>{
+    res.send("hellworld");
+});
 
 const server = app.listen(3000, () => {
   console.log('listening on *:3000');

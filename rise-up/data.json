@@ -1,0 +1,55 @@
+{
+    "0" : {
+        "Branch": "House",
+        "District":"11",
+        "firstName":"Jeffery",
+        "lastName":"Spiegelman",
+        "party":"Rep",
+        "leadership":"",
+        "committee":"",
+        "phone":"",
+        "email":"js@state.de.us",
+        "firstElected":"2012",
+        "countiesRepresented":"Clayton"
+    },
+    "1":  {
+        "Branch":"House",
+        "District":"12",
+        "firstName":"Krista",
+        "lastName":"Griffith",
+        "party":"Dem",
+        "leadership":"",
+        "committee":"Telecommunication Internet & Tech",
+        "phone":"302-744-4351",
+        "email":"kg@state.de.us",
+        "firstElected":"1994",
+        "countiesRepresented":"Fairthorne"
+    },
+    "2":  {
+        "Branch":"House",
+        "District":"13",
+        "firstName":"John",
+        "lastName":"Mitchell",
+        "party":"Dem",
+        "leadership":"Majority Whip",
+        "committee":"",
+        "phone":"123-456-7890",
+        "email":"jm@state.de.us",
+        "firstElected":"2006",
+        "countiesRepresented":"Elsmere"
+    },
+    "3":
+        {
+        "Branch":"House",
+        "District":"14",
+        "firstName":"Peter",
+        "lastName":"Schwartzkopf",
+        "party":"Dem",
+        "leadership":"Speaker of the House",
+        "committee":"",
+        "phone":"738-396-3913",
+        "email":"pk@state.de.us",
+        "firstElected":"2002",
+        "countiesRepresented": "Rehoboth"
+    }
+}

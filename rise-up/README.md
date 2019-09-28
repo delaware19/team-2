@@ -47,8 +47,7 @@ npm start
 
 ## Authors
 
-* **Shreyas Patil** - *Backend and some Front End* - [Shreyas Patil](https://github.com/ShreyasP1a)
+* **Shreyas Patil** - *FrontEnd and some Front End* - [Shreyas Patil](https://github.com/ShreyasP1a)
 
-* **Annie Brey** - *Front End* 
 
 

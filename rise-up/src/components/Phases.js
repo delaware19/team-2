@@ -70,8 +70,8 @@ class Phases extends React.Component {
                   </Card>
                 </Col>
                 <Col>
-                  <Card style={{ width: '18rem', height: '8rem' }}>
-                    <Card.Body onClick={e => this.setState({showReactTable: true})}>
+                  <Card onClick={e => this.setState({showReactTable: true})} style={{ width: '18rem', height: '8rem' }}>
+                    <Card.Body >
                       <Card.Title>Task 2</Card.Title>
                       <Card.Text>
                         Find a sponser ideally one Democrat and one Republican.

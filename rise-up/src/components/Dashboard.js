@@ -17,7 +17,9 @@ import Calendar from 'react-calendar';
 
 import Header from './Header';
 
-import {ProgressBar } from 'react-bootstrap';
+import {ProgressBar, Form } from 'react-bootstrap';
+
+import './Header.css';
 
 
 
@@ -136,7 +138,7 @@ export default function Dashboard() {
       <main className={classes.content}>
       <Header />
 
-      <ProgressBar animated now={45} />
+      <ProgressBar animated now={25} label={`${25}%`} />
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={3}>
@@ -168,7 +170,9 @@ export default function Dashboard() {
             {/* Recent Orders */}
             
           <Grid item xs={6}>
-            <Calendar> </Calendar>
+            
+    <strong className="text">Events Calendar</strong>
+            <Calendar/>>
           </Grid>
           <Grid item xs={6}>
               <Paper className={classes.paper}>

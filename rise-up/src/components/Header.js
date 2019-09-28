@@ -26,7 +26,7 @@ class Header extends React.Component{
 
     <React.Fragment>
     <Navbar bg="light" expand="lg" className="test">
-  <Navbar.Brand href="#home"><img src="https://uploads-ssl.webflow.com/5c98fd7e7e3bc9bee0816b45/5c99709e0113b8a168fec8fa_RiseLogo_02.svg"/> Rise Up </Navbar.Brand>
+  <Navbar.Brand href="/"><img src="https://uploads-ssl.webflow.com/5c98fd7e7e3bc9bee0816b45/5c99709e0113b8a168fec8fa_RiseLogo_02.svg"/> Rise Up </Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">

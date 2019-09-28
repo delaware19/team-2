@@ -21,9 +21,8 @@ browser
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running on windows only
-if you want to test on mac you must download ngrok from https://ngrok.com/
 
-Make sure you get your accountSid and authToken and your twilio number from the console page at Twilio, and change it in the consts in the app.js - side note once I get time I will make sure that process.env will work for the codes so that you only have to edit configs.
+
 
 This is for a local enviorment to run the code
 

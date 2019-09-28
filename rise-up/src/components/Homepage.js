@@ -67,13 +67,13 @@ class Homepage extends React.Component {
 
                         <Row>
                             <Col align = "center">
-                            <strong className=".bold-text">and I am From</strong></Col>
+                            <strong className=".bold-text">and I am from</strong></Col>
                             <Col >
                             <Form.Group controlId="states">
                                 <Form.Label>States</Form.Label>
                                 <Form.Control  as="select">
                                     <option>Florida</option>
-                                    <option>Deleware</option>
+                                    <option>Delaware</option>
                                     <option>Texas</option>
                                     <option>Alabama</option>
                                     <option>California</option>
@@ -82,7 +82,7 @@ class Homepage extends React.Component {
                             </Col>
                         </Row>
                         <div style={{textAlign: "center"}}>
-                        <Button type="submit"> Lets Get Started</Button>
+                        <Button type="submit"> Let's get started!</Button>
                         </div>
                     </Form>
                 </Container>

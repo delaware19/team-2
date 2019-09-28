@@ -35,9 +35,6 @@ npm start
 ```
 
 
-
-
-
 ## Built With
 
 * [NodeJs](https://nodejs.org/en/) - Backend Server used

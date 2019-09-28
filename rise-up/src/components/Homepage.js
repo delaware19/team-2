@@ -4,7 +4,7 @@ import React from 'react';
 import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 import Header from './Header'
-import { Jumbotron, Container, DropdownButton, Dropdown } from 'react-bootstrap';
+import { Jumbotron, Container, Form,  Row, Col, Button } from 'react-bootstrap';
 import "./Header.css";
 
 
@@ -35,17 +35,50 @@ class Homepage extends React.Component {
                         <h1 align="Center">Rise Up
                         </h1>
                         <p>
-                          
+
 
                         </p>
                     </Container>
                 </Jumbotron>
+                <Container>
+                    <Form>
+                        <Row>
+                            <Col align ="center" xs={6}>
+                              <strong className=".bold-text">I am passionate about changing</strong>
+                            </Col>
+                            <Col>
+                                <Form.Group controlId="exampleForm.ControlSelect1">
+                                    <Form.Label>Sexual Violence</Form.Label>
+                                    <Form.Control as="select">
+                                        <option>Sexual Violence</option>
+                                        <option>Gun Violence</option>
+                                        <option>Domestic Violence</option>
+                                        
+                                    </Form.Control>
+                                </Form.Group>
+                            </Col>
+                        </Row>
 
-                <DropdownButton className="center" id="dropdown-basic-button" title="Dropdown button">
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                </DropdownButton>
+                        <Row>
+                            <Col align = "center">
+                            <strong className=".bold-text">and I am From</strong></Col>
+                            <Col >
+                            <Form.Group controlId="exampleForm.ControlSelect2">
+                                <Form.Label>States</Form.Label>
+                                <Form.Control  as="select">
+                                    <option>Florida</option>
+                                    <option>Deleware</option>
+                                    <option>Texas</option>
+                                    <option>Alabama</option>
+                                    <option>California</option>
+                                </Form.Control>
+                            </Form.Group>
+                            </Col>
+                        </Row>
+                        
+                        <Button className="center" > Lets Get Started!</Button>
+                    </Form>
+                </Container>
 
 
             </React.Fragment>

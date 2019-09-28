@@ -9,7 +9,7 @@ import ReactModal from 'react-modal';
 import Button from '@material-ui/core/Button'; 
 const useStyles = makeStyles({
   depositContext: {
-    flex: 1,
+    flex: 2,
   },
 });
 
@@ -36,11 +36,14 @@ class Phases extends React.Component{
       return (
     <React.Fragment>
       
-      <Typography component="p" variant="h4">
+      <Typography component="p" variant="h6">
         {this.props.name}
       </Typography>
       
+      
       <div>
+      <img src= {require("../img/" + this.props.imagesrc)} width = "150" height = "150"/>
+        <br />
         <Button onClick={this.handleOpenModal} color="primary">
           View tasks
         </Button>

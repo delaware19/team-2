@@ -72,5 +72,4 @@ class Directory extends React.Component{
 
         )
     }
-
 }

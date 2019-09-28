@@ -4,6 +4,7 @@ import './App.css';
 
 import Dashboard from './components/Dashboard';
 import Homepage from './components/Homepage';
+//import Directory from './components/Directory';
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -19,14 +20,10 @@ function App() {
           <Route path="/">
             <Homepage />
           </Route>
-          <Route path="/directory">
-            <Directory />
-          </Route>
         </Switch>
       </div>
     </Router>
   );
 }
-
 
 export default App;

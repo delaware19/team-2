@@ -46,7 +46,7 @@ class Phases extends React.Component {
 
         <div>
           <img src={require("../img/" + this.props.imagesrc)} width="150" height="150" />
-          <button onClick={this.handleOpenModal}>Open Modal</button>
+          <button onClick={this.handleOpenModal}>View tasks</button>
 
           <Modal
             isOpen={this.state.showModal}
@@ -55,7 +55,8 @@ class Phases extends React.Component {
             contentLabel="Example Modal"
             
           >
-          <Button style={{textAlign: "left", margin: "30px"}} onClick={this.handleCloseModal}>close</Button>
+          <Button className="popup-close" onClick={this.handleCloseModal}>✖</Button>
+          
             <Container>
               
               <Row>
@@ -64,7 +65,7 @@ class Phases extends React.Component {
                     <Card.Body>
                       <Card.Title>Task 1</Card.Title>
                       <Card.Text>
-                        Identify all Reps and senators who can support your cause.
+                        Identify all representatives and senators who can support your cause.
           </Card.Text>
                     </Card.Body>
                   </Card>
@@ -74,7 +75,7 @@ class Phases extends React.Component {
                     <Card.Body >
                       <Card.Title>Task 2</Card.Title>
                       <Card.Text>
-                        Find a sponser ideally one Democrat and one Republican.
+                        Find sponsors for your bill, ideally one Democrat and one Republican.
         </Card.Text>
                     </Card.Body>
                   </Card>
@@ -84,7 +85,7 @@ class Phases extends React.Component {
                     <Card.Body>
                       <Card.Title>Task 3</Card.Title>
                       <Card.Text>
-                        Meet with like minded people.
+                        Meet with like minded organizations and people in your community.
       </Card.Text>
                     </Card.Body>
                   </Card>

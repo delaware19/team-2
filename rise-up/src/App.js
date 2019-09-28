@@ -38,7 +38,12 @@ function Navigation() {
 }
 
 function Home() {
-  return <h1>test</h1>
+  return (
+    <div>
+        <p>yo</p>
+        <p>how</p>
+    </div>
+  )
 }
 
 export default App;

@@ -8,16 +8,7 @@ import Modal from 'react-modal';
 import { Card, Button, Container, Row, Col } from 'react-bootstrap';
 
 
-const customStyles = {
-  content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)'
-  }
-};
+
 
 class Phases extends React.Component {
   constructor() {
@@ -59,14 +50,14 @@ class Phases extends React.Component {
 
             onRequestClose={this.handleCloseModal}
             contentLabel="Example Modal"
-            style={customStyles}
+            
           >
           <Button style={{textAlign: "left", margin: "30px"}} onClick={this.handleCloseModal}>close</Button>
             <Container>
               
               <Row>
                 <Col>
-                  <Card style={{ width: '18rem' }}>
+                  <Card style={{ width: '18rem', height: '8rem' }}>
                     <Card.Body>
                       <Card.Title>Task 1</Card.Title>
                       <Card.Text>
@@ -76,8 +67,8 @@ class Phases extends React.Component {
                   </Card>
                 </Col>
                 <Col>
-                  <Card style={{ width: '18rem' }}>
-                    <Card.Body>
+                  <Card style={{ width: '18rem', height: '8rem' }}>
+                    <Card.Body onClick={e => console.log("Test")}>
                       <Card.Title>Task 2</Card.Title>
                       <Card.Text>
                         Find a sponser ideally one Democrat and one Republican.
@@ -86,7 +77,7 @@ class Phases extends React.Component {
                   </Card>
                 </Col>
                 <Col>
-                  <Card style={{ width: '18rem' }}>
+                  <Card style={{ width: '18rem', height: '8rem' }}>
                     <Card.Body>
                       <Card.Title>Task 3</Card.Title>
                       <Card.Text>

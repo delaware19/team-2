@@ -14,23 +14,18 @@ import { Link } from 'react-router-dom';
 
 export const mainListItems = (
   <div>
-    <Link to='/'>
-
       <ListItem button>
         <ListItemIcon>
           <DashboardIcon />
         </ListItemIcon>
         <ListItemText primary="Dashboard" />
       </ListItem>
-    </Link>
-    <Link to='test'>
       <ListItem button>
           <ListItemIcon>
             <ShoppingCartIcon />
           </ListItemIcon>
           <ListItemText primary="WAN PAWNCH" />
       </ListItem>
-    </Link>
     <ListItem button>
       <ListItemIcon>
         <PeopleIcon />

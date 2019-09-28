@@ -29,6 +29,10 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+function addObjective() {
+  rows.append(createData)
+}
+
 export default function Orders() {
   const classes = useStyles();
   return (

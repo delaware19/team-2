@@ -25,6 +25,8 @@ import Calendar from 'react-calendar';
 
 import Header from './Header';
 
+import {ProgressBar } from 'react-bootstrap';
+
 import { Switch, Route } from 'react-router-dom';
 
 function Copyright() {
@@ -141,6 +143,8 @@ export default function Dashboard() {
       
       <main className={classes.content}>
       <Header />
+
+      <ProgressBar animated now={45} />
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={3}>

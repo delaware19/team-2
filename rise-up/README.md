@@ -34,7 +34,7 @@ npm i
 npm start
 ```
 
-You should change the url under the Messaging tab in the webhook field, there is already an example there for you.
+
 
 
 
@@ -42,8 +42,7 @@ You should change the url under the Messaging tab in the webhook field, there is
 
 * [NodeJs](https://nodejs.org/en/) - Backend Server used
 * [ExpressJS](https://expressjs.com/) - Routing Service
-* [Socket Io](https://socket.io/) - Used to Easily route data from client page to the server
-* [Twilio](http://twilio.com) - Used to connect people using their awesome api
+* [React JS](https://socket.io/) - Used to Easily route data from client page to the server
 
 
 ## Authors

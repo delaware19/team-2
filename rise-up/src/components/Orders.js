@@ -20,6 +20,7 @@ const rows = [
   createData(0, "Call Senator JP Morgan", '16 Mar, 2019',<Checkbox/>),
   createData(1, "Draft FB post and share with Moms Demand Action", '30 Mar, 2019',<Checkbox/>),
   createData(2, "Deadline to file intent", '30 Jun, 2020',<Checkbox/>),
+  createData(3, "Deadline to file intent", '30 Jun, 2020',<Checkbox/>)
 
 ];
 
@@ -37,7 +38,7 @@ export default function Orders() {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Title align="right">To Do List</Title>
+  
       <Table size="small">
         <TableHead>
           <TableRow>

@@ -93,10 +93,9 @@ class Homepage extends React.Component {
                                 </Form.Control>
                             </Form.Group>
                             </Col>
+                             
                         </Row>
-                        <div style={{textAlign: "center"}}>
-                        <Button type="submit"> Let's get started!</Button>
-                        </div>
+                        
                     </Form>
                    <br /> <br /> <br /> <br /><br /><br /> <br />
                    <br /> <br />

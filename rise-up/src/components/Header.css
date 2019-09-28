@@ -20,4 +20,10 @@
 
 .text {
     font-family: 'Be Vietnam', sans-serif;
+    font-size: 20px;
+    align-content: center;
+    padding-left: 80px;
+}
+.phaseLabel {
+    padding-left: 400px;
 }

@@ -17,7 +17,7 @@ import Calendar from 'react-calendar';
 
 import Header from './Header';
 
-import {ProgressBar, Form } from 'react-bootstrap';
+import { ProgressBar, Form } from 'react-bootstrap';
 
 import './Header.css';
 
@@ -131,56 +131,62 @@ export default function Dashboard() {
   return (
     <div className={classes.root}>
 
-     
+
       <CssBaseline />
 
-      
-      <main className={classes.content}>
-      <Header />
 
-      <ProgressBar animated now={25} label={`${25}%`} />
+      <main className={classes.content}>
+        <Header />
+
+        <ProgressBar animated now={25} label={`${25}%`} />
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={3}>
-            {/* Recent Phases */}
+            
             <Grid item xs={12} md={4} lg={3}>
               <Paper className={fixedHeightPaper}>
                 <Phases name="Phase 1: Research" imagesrc="phase1.png" />
-                
+
               </Paper>
             </Grid>
             <Grid item xs={12} md={4} lg={3}>
               <Paper className={fixedHeightPaper}>
-                <Phases name="Phase 2: Community" imagesrc="phase2.png"/>
-                
+                <Phases name="Phase 2: Community" imagesrc="phase2.png" />
+
               </Paper>
             </Grid>
             <Grid item xs={12} md={4} lg={3}>
               <Paper className={fixedHeightPaper}>
-                <Phases name="Phase 3: Storytelling" imagesrc="phase3.png"/>
-                
+                <Phases name="Phase 3: Storytelling" imagesrc="phase3.png" />
+
               </Paper>
             </Grid>
             <Grid item xs={12} md={4} lg={3}>
               <Paper className={fixedHeightPaper}>
-                <Phases name="Phase 4: Lawmaking" imagesrc="phase4.png"/>
-                
+                <Phases name="Phase 4: Lawmaking" imagesrc="phase4.png" />
+
               </Paper>
             </Grid>
-            {/* Recent Orders */}
-            
-          <Grid item xs={6}>
-            
-    <strong className="text">Events Calendar</strong>
-            <Calendar/>>
-          </Grid>
-          <Grid item xs={6}>
-              <Paper className={classes.paper}>
-                <Orders />
-              </Paper>
-            </Grid>
-          </Grid>
-          
+
+            </Grid> 
+
+            <Grid container spacing={1}>
+            <Grid item xs={4}>
+            <div>
+              <strong className="text">Events Calendar</strong>
+              <Calendar />
+              </div>
+              </Grid>
+              <Grid item xs={6}>
+              <div>
+              <strong className="text">To do List</strong>
+                <Paper className={classes.paper}>
+                  <Orders />
+                </Paper>
+                </div>
+              </Grid>
+              </Grid>
+
         </Container>
         <Copyright />
       </main>

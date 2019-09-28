@@ -9,7 +9,7 @@ import { Card, Button, Container, Row, Col } from 'react-bootstrap';
 
 import ReacttableModal from './ReacttableModal';
 
-
+import './Header.css'
 
 
 class Phases extends React.Component {
@@ -56,12 +56,21 @@ class Phases extends React.Component {
             
           >
           <Button className="popup-close" onClick={this.handleCloseModal}>✖</Button>
+        <Container><Row><Col>
+        
+        <strong className="text phaseLabel">Phase 2 Tasks</strong></Col>
+      
+        <div style={{textAlign: "center"}}>
+        <Button type="submit"> Resources</Button>
+        </div>
+        </Row>
+        </Container>
           
             <Container>
               
               <Row>
                 <Col>
-                  <Card style={{ width: '18rem', height: '8rem' }}>
+                  <Card style={{ width: '18rem', height: '10rem' }}>
                     <Card.Body>
                       <Card.Title>Task 1</Card.Title>
                       <Card.Text>
@@ -71,7 +80,7 @@ class Phases extends React.Component {
                   </Card>
                 </Col>
                 <Col>
-                  <Card onClick={e => this.setState({showReactTable: true})} style={{ width: '18rem', height: '8rem' }}>
+                  <Card onClick={e => this.setState({showReactTable: true})} style={{ width: '18rem', height: '10rem' }}>
                     <Card.Body >
                       <Card.Title>Task 2</Card.Title>
                       <Card.Text>
@@ -81,7 +90,7 @@ class Phases extends React.Component {
                   </Card>
                 </Col>
                 <Col>
-                  <Card style={{ width: '18rem', height: '8rem' }}>
+                  <Card style={{ width: '18rem', height: '10rem' }}>
                     <Card.Body>
                       <Card.Title>Task 3</Card.Title>
                       <Card.Text>

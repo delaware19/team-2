@@ -23,6 +23,8 @@ import Phases from './Phases';
 import Orders from './Orders';
 import Calendar from 'react-calendar';
 
+import Header from './Header';
+
 import { Switch, Route } from 'react-router-dom';
 
 function Copyright() {
@@ -30,7 +32,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+        Rise Up
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -132,60 +134,45 @@ export default function Dashboard() {
 
   return (
     <div className={classes.root}>
+
+     
       <CssBaseline />
 
-      <Drawer
-        variant="permanent"
-        classes={{
-          paper: clsx(classes.drawerPaper, !open && classes.drawerPaperClose),
-        }}
-        open={open}
-      >
-        <div className={classes.toolbarIcon}>
-          <IconButton onClick={handleDrawerClose}>
-            <ChevronLeftIcon />
-          </IconButton>
-        </div>
-        <Divider />
-        <List>{mainListItems}</List>
-        <Divider />
-        <List>{secondaryListItems}</List>
-      </Drawer>
+      
       <main className={classes.content}>
+      <Header />
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={3}>
             {/* Recent Phases */}
             <Grid item xs={12} md={4} lg={3}>
               <Paper className={fixedHeightPaper}>
-                <Phases name="Phase 1" />
+                <Phases name="Phase 1: Research" imagesrc="phase1.png"/>
+                
               </Paper>
             </Grid>
             <Grid item xs={12} md={4} lg={3}>
               <Paper className={fixedHeightPaper}>
-                <Phases name="Phase 2"/>
+                <Phases name="Phase 2: Community" imagesrc="phase2.png"/>
+                
               </Paper>
             </Grid>
             <Grid item xs={12} md={4} lg={3}>
               <Paper className={fixedHeightPaper}>
-                <Phases name="Phase 3"/>
+                <Phases name="Phase 3: Storytelling" imagesrc="phase3.png"/>
+                
               </Paper>
             </Grid>
             <Grid item xs={12} md={4} lg={3}>
               <Paper className={fixedHeightPaper}>
-                <Phases name="Phase 4"/>
+                <Phases name="Phase 4: Lawmaking" imagesrc="phase4.png"/>
+                
               </Paper>
             </Grid>
             {/* Recent Orders */}
-            <Grid item xs={12}>
-              <Paper className={classes.paper}>
-                <Orders />
-              </Paper>
-            </Grid>
+            
           </Grid>
-          <Grid item xs={12}>
-            <Calendar> </Calendar>
-          </Grid>
+         
         </Container>
         <Copyright />
       </main>

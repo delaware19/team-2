@@ -9,5 +9,12 @@
 
 .bold-text {
     font-family: 'Be Vietnam', sans-serif;
-    
+
+}
+.movecenter {
+    padding-left: 600px;
+}
+
+.btn {
+    padding-left: 500px;
 }

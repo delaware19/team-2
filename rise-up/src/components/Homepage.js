@@ -6,6 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Header from './Header'
 import { Jumbotron, Container, Form,  Row, Col, Button } from 'react-bootstrap';
 import "./Header.css";
+import {withRouter } from 'react-router-dom'
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -19,7 +20,12 @@ class Homepage extends React.Component {
     constructor() {
         super();
     }
-
+    submitForm (e) {
+        e.preventDefault()
+        console.log(e.target.elements);
+        this.props.history.push('/Dashboard');
+		
+	}
 
 
     // const classes = useStyles(); 
@@ -41,14 +47,14 @@ class Homepage extends React.Component {
                     </Container>
                 </Jumbotron>
                 <Container>
-                    <Form>
+                    <Form onSubmit={this.submitForm.bind(this)}>
                         <Row>
                             <Col align ="center" xs={6}>
                               <strong className=".bold-text">I am passionate about changing</strong>
                             </Col>
                             <Col>
-                                <Form.Group controlId="exampleForm.ControlSelect1">
-                                    <Form.Label>Sexual Violence</Form.Label>
+                                <Form.Group controlId="violence">
+                                    <Form.Label>Choose</Form.Label>
                                     <Form.Control as="select">
                                         <option>Sexual Violence</option>
                                         <option>Gun Violence</option>
@@ -63,7 +69,7 @@ class Homepage extends React.Component {
                             <Col align = "center">
                             <strong className=".bold-text">and I am From</strong></Col>
                             <Col >
-                            <Form.Group controlId="exampleForm.ControlSelect2">
+                            <Form.Group controlId="states">
                                 <Form.Label>States</Form.Label>
                                 <Form.Control  as="select">
                                     <option>Florida</option>
@@ -75,8 +81,9 @@ class Homepage extends React.Component {
                             </Form.Group>
                             </Col>
                         </Row>
-                        
-                        <Button className="center" > Lets Get Started!</Button>
+                        <div style={{textAlign: "center"}}>
+                        <Button type="submit"> Lets Get Started</Button>
+                        </div>
                     </Form>
                 </Container>
 
@@ -86,5 +93,5 @@ class Homepage extends React.Component {
     }
 }
 
-export default Homepage;
+export default withRouter(Homepage);
 
